@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'figtreelight';
+    src: url('assets/fonts/figtree-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/figtree-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'figtreelight_italic';
+    src: url('assets/fonts/figtree-italic-variablefont_wght-webfont.woff2') format('woff2'),
+         url('assets/fonts/figtree-italic-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+:root {
+    --main-color: hsl(47, 88%, 63%);
+    --second-color: hsl(0, 0%, 7%);
+    --third-color: hsl(0, 0%, 100%);
+    --fourth-color:hsl(0, 0%, 50%);
+    --basic-font-size: 16px;
+}
+
+body {
+    font-family:'figtreelight';
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 250px;
+}
+
+#card {
+    background-color: var(--third-color);
+    height: 55vh;
+    width: 20vw;
+    border-radius: 5%;
+    border: solid 2px var(--second-color);
+    box-shadow: 15px 15px 2px var(--second-color);
+}
+
+#main {
+    margin: 20px;
+    height: 93%;
+    border-radius: 5%;
+}
+
+svg {
+    border-radius: 5%;
+}
+
+#bouton {
+    background-color: var(--main-color);
+    width: 5vw;
+    height: 3vh;
+    border-radius: 5px;
+}
+
+#btn {
+    font-weight: 800;
+    text-align: center;
+}
+
+#italic {
+    font-family: 'figtreelight_italic';
+    font-style: italic;
+    color: var(--fourth-color);
+}
+
+#footer {
+    display: flex;
+    height: 50px;
+}
+
+#pic2 {
+    margin-right: 10px;
+}
+
+#nom {
+    font-weight: bold;
+}
+
+h2:hover {
+    color: var(--main-color);
+}
+
+/* Responsive */
+
+@media (max-width:500px){
+    body {
+        font-family:'figtreelight';
+        background-color: var(--main-color);
+        display: flex;
+        justify-content: center;
+        margin-top: 200px;
+    }
+    
+    #card {
+        background-color: var(--third-color);
+        height: 55vh;
+        width: 65vw;
+        border-radius: 5%;
+        border: solid 2px var(--second-color);
+        box-shadow: 15px 15px 2px var(--second-color);
+    }
+    
+    #main {
+        margin: 20px;
+        height: 93%;
+        border-radius: 5%;
+    }
+    
+    svg {
+        border-radius: 5%;
+    }
+    
+    #bouton {
+        background-color: var(--main-color);
+        width: 15vw;
+        height: 3vh;
+        border-radius: 5px;
+    }
+    
+    #btn {
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    #italic {
+        font-family: 'figtreelight_italic';
+        font-style: italic;
+        color: var(--fourth-color);
+    }
+    
+    #footer {
+        display: flex;
+        height: 50px;
+    }
+    
+    #pic2 {
+        margin-right: 10px;
+    }
+    
+    #nom {
+        font-weight: bold;
+    }
+    
+    h2:hover {
+        color: var(--main-color);
+    }
+    
+}
